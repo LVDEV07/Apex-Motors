@@ -1,0 +1,31 @@
+@import url('https://googleapis.com');
+
+.black-ops-one-regular {
+  font-family: "Black Ops One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header{
+    background-color: #16263D;
+    height: 200px;
+}
+
+
+img {
+
+    margin: 30px;
+    width: 130px;
+}
+
+section{
+    display: flex;
+    color: #DB1C22;
+    
+}
+
+.titulos{
+     font-family: "Black Ops One", system-ui;
+     font-size: 50px;
+}
+
