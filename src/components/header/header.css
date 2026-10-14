@@ -7,15 +7,19 @@
 }
 
 header{
+    display: flex;
+    flex-direction: column;
     background-color: #16263D;
-    height: 200px;
+
 }
 
 
 img {
 
-    margin: 30px;
-    width: 130px;
+
+    width: 100px;
+    height: 100px;
+    
 }
 
 section{
@@ -24,8 +28,19 @@ section{
     
 }
 
+
+
 .titulos{
      font-family: "Black Ops One", system-ui;
-     font-size: 50px;
+     font-size: 30px;
+     margin: 0 auto;
+    
+     
+ 
+}
+
+.title{
+     color: #DB1C22;
+     margin-right: 100px;
 }
 

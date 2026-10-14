@@ -4,17 +4,16 @@ import '@fontsource/black-ops-one';
 
 export default function index() {
     return (
-        <header>
-            <section>
-                <img src="src\assets\images\Logo.png" alt="" />
-
-                <div className='titulos'>
-                    <h2>Apex Motors</h2>
-
-                </div>
-            </section>
-
-        </header>
+<header className='header'>
+          <section className='title-container'>
+            <img src="src\assets\images\logo.png" alt="" width="60px"/>
+          
+          <div className='titulos'>
+          <h1 className='title'>Apex Motors</h1>
+        
+          </div>
+          </section>
+    </header>
 
     )
 }

@@ -1,7 +1,10 @@
 import { BrowserRouter, Routes, Route} from "react-router-dom";
 import Home from "./pages/home"
-import Carros from "./pages/carros"
+import Cadastro from "./pages/cadastro"
 import Nav from "./components/nav"
+import NotFound from "./pages/NotFound"
+import Carros from "./pages/carros"
+import Usuarios from "./pages/Usuarios"
 
 export default function router() {
   return (
@@ -9,7 +12,11 @@ export default function router() {
     <Nav/>
         <Routes>
             <Route path="/" element={<Home/>}/>
-            <Route path="/" element={<Carros/>}/>
+            <Route path="/cadastro" element={<Cadastro/>}/>
+            <Route path="*" element={<NotFound/>}/>
+            <Route path="/carros" element={<Carros/>}/>
+            <Route path="/usuarios" element={<Usuarios/>}/>
+
         </Routes>
     </BrowserRouter>
   )

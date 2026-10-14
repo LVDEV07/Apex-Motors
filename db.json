@@ -1,0 +1,23 @@
+{
+  "carros": [
+    {
+      "nome": "Onix",
+      "marca": "Chevrolet",
+      "modelo": "LT",
+      "ano": "2026",
+      "quilometragem": "2000",
+      "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy5aafzCZsAOjtgEGylmOCauocWh1YkgWnWy2_5taJISUIR8H5QeINm_Y&s=10",
+      "id": "ZsGgpnD1CLw"
+    },
+    {
+      "nome": "Onix",
+      "marca": "Chevrolet",
+      "modelo": "LT",
+      "ano": "2026",
+      "quilometragem": "1321",
+      "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy5aafzCZsAOjtgEGylmOCauocWh1YkgWnWy2_5taJISUIR8H5QeINm_Y&s=10",
+      "id": "0LHEBw_aGdg"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
