@@ -11,12 +11,6 @@ export default function index() {
                         Home
                     </Link>
                 </li>
-                <li>
-
-                    <Link to="/usuarios">
-                        Usuarios
-                    </Link>
-                </li>
 
                 <li>
 

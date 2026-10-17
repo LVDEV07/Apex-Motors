@@ -16,6 +16,15 @@ export default function index() {
       .then((data) => setUsuarios(data)).catch((error) => console.log(error))
   }, [])
 
+      const deleteCarros = (id) => {
+        fetch(`http://localhost:3000/usuarios/${id}`, {method: "DELETE"})
+        .then(() =>{
+            setUsuarios(usuarios.filter((usuario) => usuario.id !== id)  )
+        })
+        .catch((error) => console.error(error))
+    }
+
+
   return (
     <>
 
@@ -54,7 +63,7 @@ export default function index() {
 
 
               <button className='delete'
-                onClick={() => deleteUsuarios(carro.id)}
+                onClick={() => deleteCarros(carro.id)}
               >Deletar</button>
 
               <hr />
