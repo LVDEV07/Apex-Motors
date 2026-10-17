@@ -3,7 +3,6 @@ import Home from "./pages/home"
 import Cadastro from "./pages/cadastro"
 import Nav from "./components/nav"
 import NotFound from "./pages/NotFound"
-import Carros from "./pages/carros"
 import Usuarios from "./pages/Usuarios"
 
 export default function router() {
@@ -14,7 +13,6 @@ export default function router() {
             <Route path="/" element={<Home/>}/>
             <Route path="/cadastro" element={<Cadastro/>}/>
             <Route path="*" element={<NotFound/>}/>
-            <Route path="/carros" element={<Carros/>}/>
             <Route path="/usuarios" element={<Usuarios/>}/>
 
         </Routes>

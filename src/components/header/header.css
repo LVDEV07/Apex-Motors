@@ -7,6 +7,7 @@
 }
 
 header{
+    font-family: "Black Ops One", system-ui;
     display: flex;
     flex-direction: column;
     background-color: #16263D;
@@ -25,6 +26,7 @@ img {
 section{
     display: flex;
     color: #DB1C22;
+    margin-left: 100px;
     
 }
 

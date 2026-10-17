@@ -1,3 +1,5 @@
+@import url('https://googleapis.com');
+
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -5,10 +7,15 @@
 }
 
 
-footer{
+.black-ops-one-regular {
+  font-family: "Black Ops One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
 
+footer{
+    font-family: "Black Ops One", system-ui;
     display: flex;
-    position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -24,5 +31,6 @@ footer a{
     
     text-decoration: none;
     margin: auto 0;
+    color: white;
     
 }

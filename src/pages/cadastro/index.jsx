@@ -8,11 +8,13 @@ export default function index() {
   //estado para armazenar os dados do formulario
 
   const [formData, setFormData] = useState({
+      imagem:"",
       nome: "",
       marca: "",
       modelo: "",
       ano: "",
-      quilometragem: ""
+      quilometragem: "",
+      Valor: ""
   });
 
   // função para atualizar o estado ao digitar no formulario
@@ -48,11 +50,13 @@ export default function index() {
 
         toast.success("Usuário cadastrado com sucesso")
         setFormData({
+            imagem:"",
             nome: "",
             marca: "",
             modelo: "",
             ano: "",
-            quilometragem: ""
+            quilometragem: "",
+            Valor: ""
         });
       });
   }
@@ -79,7 +83,7 @@ export default function index() {
         </article>
 
         <article className='form-control'>
-          <label htmlFor="modelo">Modelo</label>
+          <label htmlFor="modelo">Modelo e Versão</label>
           <input type="text" name='modelo' value={formData.modelo} onChange={handleChange} required/>
         </article>
 
@@ -90,6 +94,10 @@ export default function index() {
         <article className='form-control'>
           <label htmlFor="quilometragem">quilometragem</label>
           <input type="number" name='quilometragem' value={formData.quilometragem} onChange={handleChange} required/>
+        </article>
+        <article className='form-control'>
+          <label htmlFor="Valor">Valor</label>
+          <input type="number" name='Valor' value={formData.Valor} onChange={handleChange} required/>
         </article>
 
         <button type='submit'>Cadastrar</button>
