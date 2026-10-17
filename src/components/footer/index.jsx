@@ -4,9 +4,9 @@ export default function index() {
   return (
 
       <footer className=''>
-        <a href='#'>Sobre nós</a>
-        <a href='#'>Nos contate</a>
-        <a href='#'>FAQs</a>
+        <a href='/sobre'>Sobre nós</a>
+        <a href='/contato'>Nos contate</a>
+        <a href='/faq'>FAQs</a>
     </footer>
    
   )

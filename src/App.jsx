@@ -8,14 +8,14 @@ function App() {
 
 
   return (
-    <>
+    <div className="app-container">
 
     <Header/>
     <Router />
     <Footer/>
 
     
-    </>
+    </div>
   )
 }
 
