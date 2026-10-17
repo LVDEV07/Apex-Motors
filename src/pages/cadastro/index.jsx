@@ -38,7 +38,7 @@ export default function index() {
     }
 
 
-    fetch("http://localhost:3000/carros", {
+    fetch("https://6ad2c7f166cd28aed82e40ec.mockapi.io/carros", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
