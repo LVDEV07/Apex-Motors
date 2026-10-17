@@ -11,7 +11,7 @@ export default function index() {
   const [usuarios, setUsuarios] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/carros")
+    fetch("https://my-json-server.typicode.com/lvdev07/apex-motors/carros")
       .then((response) => response.json())
       .then((data) => setUsuarios(data)).catch((error) => console.log(error))
   }, [])

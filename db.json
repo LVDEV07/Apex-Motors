@@ -79,26 +79,6 @@
       "quilometragem": "15.300",
       "Valor": "310.000",
       "imagem": "https://cdn.motor1.com/images/mgl/xqZJ9G/686:0:4094:3072/bmw-320i-m-sport-2023.webp"
-    },
-    {
-      "imagem": "https://cdn.motor1.com/images/mgl/xqZJ9G/686:0:4094:3072/bmw-320i-m-sport-2023.webp",
-      "nome": "320i",
-      "marca": "BMW ",
-      "modelo": "M Sport 2.0 Turbo",
-      "ano": "2023",
-      "quilometragem": "15.300",
-      "Valor": "310.000",
-      "id": "NQXf-H1oTmM"
-    },
-    {
-      "imagem": "https://cdn.motor1.com/images/mgl/xqZJ9G/686:0:4094:3072/bmw-320i-m-sport-2023.webp",
-      "nome": "320i",
-      "marca": "BMW ",
-      "modelo": "M Sport 2.0 Turbo",
-      "ano": "2023",
-      "quilometragem": "15.300",
-      "Valor": "310.000",
-      "id": "3wJcK0DT1hs"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
