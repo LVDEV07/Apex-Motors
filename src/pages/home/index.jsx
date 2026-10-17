@@ -41,7 +41,7 @@ export default function index() {
 
               
 
-              <a href="https://www.flaticon.com/br/icones-gratis/calendario-mensal" title="calendário mensal ícones"><img src="src\assets\images\ring-calendar.png" alt="" className='icon-calendario' /></a> {carro.ano} <img src="src\assets\images\velocimetro.png" alt="" className='icon-velocimetro' />  {carro.quilometragem} KM
+              <a href="https://www.flaticon.com/br/icones-gratis/calendario-mensal" title="calendário mensal ícones"><img src="public\ring-calendar.png" alt="" className='icon-calendario' /></a> {carro.ano} <img src="public\velocimetro.png" alt="" className='icon-velocimetro' />  {carro.quilometragem} KM
               </div>
 
               <div className='valor'>
