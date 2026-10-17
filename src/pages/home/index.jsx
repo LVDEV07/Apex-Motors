@@ -18,7 +18,7 @@ export default function index() {
 
   return (
     <>
-      
+
       <section className='container usuarios'>
 
 
@@ -31,30 +31,31 @@ export default function index() {
             <div className='conteudo-anuncio'>
 
 
-             <div className='titulo'> {carro.marca} {carro.nome}</div>
+              <div className='titulo'> {carro.marca} {carro.nome}</div>
 
 
               <div className='sub-infos'>
-              {carro.modelo}
-
-              <br />
-
-              
-
-              <a href="https://www.flaticon.com/br/icones-gratis/calendario-mensal" title="calendário mensal ícones"><img src="public\ring-calendar.png" alt="" className='icon-calendario' /></a> {carro.ano} <img src="public\velocimetro.png" alt="" className='icon-velocimetro' />  {carro.quilometragem} KM
+                {carro.modelo}
+                <br />
+                <a href="https://www.flaticon.com/br/icones-gratis/calendario-mensal" title="calendário mensal ícones">
+                  <img src="/ring-calendar.png" alt="Calendário" className='icon-calendario' />
+                </a>
+                {carro.ano}
+                <img src="/velocimetro.png" alt="Velocímetro" className='icon-velocimetro' />
+                {carro.quilometragem} KM
               </div>
 
               <div className='valor'>
-                 R$ {carro.Valor}
-                </div>
+                R$ {carro.Valor}
+              </div>
 
-              
 
-       
+
+
 
               <button className='delete'
                 onClick={() => deleteUsuarios(carro.id)}
-                >Deletar</button>
+              >Deletar</button>
 
               <hr />
             </div>
