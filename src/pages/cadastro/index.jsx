@@ -64,7 +64,7 @@ export default function index() {
 
   return (
     <main className='container'>
-      <h1>Cadastro de usuários</h1>
+      <h1>Cadastro de carros</h1>
       <form onSubmit={handleSubmit}>
 
         <article className='form-control'>
