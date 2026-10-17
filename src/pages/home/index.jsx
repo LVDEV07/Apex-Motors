@@ -17,7 +17,7 @@ export default function index() {
   }, [])
 
       const deleteCarros = (id) => {
-        fetch(`http://localhost:3000/usuarios/${id}`, {method: "DELETE"})
+        fetch(`https://6ad2c7f166cd28aed82e40ec.mockapi.io/carros/${id}`, {method: "DELETE"})
         .then(() =>{
             setUsuarios(usuarios.filter((usuario) => usuario.id !== id)  )
         })
