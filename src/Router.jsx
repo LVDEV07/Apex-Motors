@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route} from "react-router-dom";
 import Home from "./pages/home"
 import Cadastro from "./pages/cadastro"
 import Nav from "./components/nav"
+import Footer from "./components/footer"
 import NotFound from "./pages/NotFound"
 import Sobre from "./pages/sobre"
 import Contato from "./pages/contato"
@@ -22,6 +23,7 @@ export default function router() {
 
 
         </Routes>
+        <Footer/>
     </BrowserRouter>
   )
 }

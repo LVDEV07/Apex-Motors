@@ -1,6 +1,5 @@
 
 import Header from "./components/header"
-import Footer from "./components/footer"
 import "./global.css"
 import Router from "./Router"
 
@@ -12,8 +11,6 @@ function App() {
 
     <Header/>
     <Router />
-    <Footer/>
-
     
     </div>
   )
