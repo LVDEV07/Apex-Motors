@@ -1,6 +1,8 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
 import { data } from 'react-router-dom'
+import { toast, ToastContainer } from "react-toastify"
+import "../../../node_modules/react-toastify/dist/ReactToastify.css"
 import "./home.css"
 
 
@@ -27,7 +29,7 @@ export default function index() {
 
   return (
     <>
-
+      <h1>Veículos Disponíveis</h1>
       <section className='container usuarios'>
 
 
@@ -58,9 +60,12 @@ export default function index() {
                 R$ {carro.Valor}
               </div>
 
-
-
-
+              <button className='alugar'
+                onClick={() => {
+                  deleteCarros(carro.id)
+                  toast.success("Carro alugado com sucesso")
+                }}
+              >Alugar</button>
 
               <button className='delete'
                 onClick={() => deleteCarros(carro.id)}
@@ -71,7 +76,7 @@ export default function index() {
           </article>
         ))}
 
-
+        <ToastContainer />
       </section>
     </>
   )

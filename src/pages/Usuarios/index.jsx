@@ -21,6 +21,7 @@ export default function index() {
 
   return (
     <>
+      <h1>Usuários Cadastrados</h1>
       <section className='container usuarios usuarios-lista'>
 
         {usuarios.map((usuario) => (

@@ -12,6 +12,7 @@
 
 
 h1 {
+    font-family: "Ubuntu", sans-serif;
     margin-top: 50px;
     color: #DB1C22;
     text-align: center;
@@ -19,9 +20,14 @@ h1 {
 }
 
 form {
-
-    width: 300px;
-    margin: 0 auto;
+    width: 420px;
+    margin: 0 auto 40px;
+    padding: 30px 45px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #dce1e7;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
     font-family: "Ubuntu", sans-serif;
 }
 
@@ -40,6 +46,7 @@ form {
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    box-sizing: border-box;
 }
 
 button {

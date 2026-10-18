@@ -59,12 +59,12 @@ export default function index() {
 
         <article className='form-control'>
           <label htmlFor="nome">Nome</label>
-          <input type="text" name='nome' value={formData.nome} onChange={handleChange} required/>
+          <input type="text" name='nome' placeholder="Lucas Silva" value={formData.nome} onChange={handleChange}/>
         </article>
 
         <article className='form-control'>
           <label htmlFor="email">Email</label>
-          <input type="email" name='email' value={formData.email} onChange={handleChange} required/>
+          <input type="email" name='email' placeholder="lucas@email.com" value={formData.email} onChange={handleChange}/>
         </article>
 
         <button type='submit'>Cadastrar</button>

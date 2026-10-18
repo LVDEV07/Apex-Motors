@@ -32,7 +32,7 @@ export default function index() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if(formData.nome === "" || formData.telefone === "" || formData.email === ""){
+    if(formData.imagem === "" || formData.nome === "" || formData.marca === "" || formData.modelo === "" || formData.ano === "" || formData.quilometragem === "" || formData.Valor === ""){
       toast.error("Preencha todos os campos")
       return false;
     }
@@ -46,9 +46,9 @@ export default function index() {
       body: JSON.stringify(formData)
     }).then((response) => response.json())
       .then((data) => {
-        console.log("Usuário cadastrado com sucesso:", data);
+        console.log("Carro cadastrado com sucesso:", data);
 
-        toast.success("Usuário cadastrado com sucesso")
+        toast.success("Carro cadastrado com sucesso")
         setFormData({
             imagem:"",
             nome: "",
@@ -69,35 +69,35 @@ export default function index() {
 
         <article className='form-control'>
           <label htmlFor="imagem">Imagem</label>
-          <input type="text" name='imagem' value={formData.imagem} onChange={handleChange} required/>
+          <input type="text" name='imagem' placeholder="URL da foto do veículo" value={formData.imagem} onChange={handleChange}/>
         </article>
 
         <article className='form-control'>
           <label htmlFor="nome">Nome</label>
-          <input type="text" name='nome' value={formData.nome} onChange={handleChange} required/>
+          <input type="text" name='nome' placeholder="Civic" value={formData.nome} onChange={handleChange}/>
         </article>
 
         <article className='form-control'>
           <label htmlFor="marca">Marca</label>
-          <input type="text" name='marca' value={formData.marca} onChange={handleChange} required/>
+          <input type="text" name='marca' placeholder="Honda" value={formData.marca} onChange={handleChange}/>
         </article>
 
         <article className='form-control'>
           <label htmlFor="modelo">Modelo e Versão</label>
-          <input type="text" name='modelo' value={formData.modelo} onChange={handleChange} required/>
+          <input type="text" name='modelo' placeholder="Touring 1.5 Turbo" value={formData.modelo} onChange={handleChange}/>
         </article>
 
         <article className='form-control'>
           <label htmlFor="ano">Ano</label>
-          <input type="number" name='ano' value={formData.ano} onChange={handleChange} required/>
+          <input type="number" name='ano' placeholder="2023" value={formData.ano} onChange={handleChange}/>
         </article>
         <article className='form-control'>
-          <label htmlFor="quilometragem">quilometragem</label>
-          <input type="number" name='quilometragem' value={formData.quilometragem} onChange={handleChange} required/>
+          <label htmlFor="quilometragem">Quilometragem</label>
+          <input type="number" name='quilometragem' placeholder="15.000" value={formData.quilometragem} onChange={handleChange}/>
         </article>
         <article className='form-control'>
           <label htmlFor="Valor">Valor</label>
-          <input type="number" name='Valor' value={formData.Valor} onChange={handleChange} required/>
+          <input type="number" name='Valor' placeholder="145.000" value={formData.Valor} onChange={handleChange}/>
         </article>
 
         <button type='submit'>Cadastrar</button>
