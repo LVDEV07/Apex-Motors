@@ -7,12 +7,13 @@
 
 .container{
     font-family: "Ubuntu", sans-serif;
+     color: #DB1C22;
 }
 
 
 h1 {
     margin-top: 50px;
-    color: #343a40;
+    color: #DB1C22;
     text-align: center;
     margin-bottom: 20px;
 }

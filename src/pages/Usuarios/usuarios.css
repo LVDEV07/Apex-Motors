@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+.ubuntu-regular {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+}
+
+.usuarios-lista {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+.usuarios-lista .content-usuarios {
+    font-family: "Ubuntu", sans-serif;
+    margin: 0;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    border: 1px solid #e5e5e5;
+    color: #333;
+    overflow: hidden;
+    flex: 1 1 220px;
+    max-width: 260px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.usuarios-lista .conteudo-anuncio {
+    margin: 0;
+    padding: 14px 16px;
+}
+
+.usuarios-lista .titulo {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+.usuarios-lista .sub-infos {
+    color: #585858;
+    font-size: 14px;
+    word-break: break-word;
+}
+
+.usuarios-lista .content-usuarios hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin-top: 14px;
+}
+
+.usuarios-lista .delete {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: #DB1C22;
+    color: white;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.2s;
+    width: 70%;
+}
+
+.usuarios-lista .delete:hover {
+    background-color: #b02a37;
+    transform: translateY(-1px);
+}
