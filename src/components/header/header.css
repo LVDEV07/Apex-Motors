@@ -15,7 +15,7 @@ header{
 }
 
 
-img {
+.header img {
 
 
     width: 100px;
@@ -23,11 +23,11 @@ img {
     
 }
 
-section{
+.header section{
     display: flex;
+    align-items: center;
     color: #DB1C22;
     margin-left: 100px;
-    
 }
 
 
@@ -36,14 +36,11 @@ section{
      font-family: "Black Ops One", system-ui;
      font-size: 30px;
      margin: 0 auto;
-    
-     
- 
 }
 
 .title{
      font-family: "Black Ops One", system-ui;
      color: #DB1C22;
-     margin-right: 100px;
+     margin-right: 200px;
 }
 
