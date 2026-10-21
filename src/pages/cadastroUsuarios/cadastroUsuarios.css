@@ -5,56 +5,80 @@
     font-weight: 400;
 }
 
-.container{
+.pagina-cadastro-usuarios {
     font-family: "Ubuntu", sans-serif;
+    padding: 0 16px 60px;
 }
 
-
-h1 {
-    font-family: "Ubuntu", sans-serif;
-    margin-top: 50px;
-    color: #333333;
+.pagina-cadastro-usuarios .titulo-cadastro {
+    font-family: "Black Ops One", system-ui;
+    font-size: 38px;
     text-align: center;
-    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #16263D;
+    letter-spacing: 1px;
+    margin: 36px 0 24px;
 }
 
-form {
-    width: 420px;
+.pagina-cadastro-usuarios .formulario {
+    width: 100%;
+    max-width: 420px;
     margin: 0 auto 40px;
-    padding: 30px 45px;
+    padding: 28px 32px;
     background-color: #ffffff;
     border-radius: 12px;
-    border: 1px solid #dce1e7;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border: 3px solid #16263D;
+    box-shadow: 6px 6px 0 #16263D;
     box-sizing: border-box;
     font-family: "Ubuntu", sans-serif;
 }
 
-.form-control {
-    margin-bottom: 15px;
+.pagina-cadastro-usuarios .form-control {
+    margin-bottom: 18px;
 }
 
-.form-control label {
+.pagina-cadastro-usuarios .form-control label {
     display: block;
-    color: #6c757d;
-    margin-bottom: 5px;
+    font-family: "Black Ops One", system-ui;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #16263D;
+    margin-bottom: 6px;
 }
 
-.form-control input {
+.pagina-cadastro-usuarios .form-control input {
     width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    padding: 10px 12px;
+    background-color: #f8fafc;
+    border: 2px solid #16263D;
+    border-radius: 6px;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #16263D;
+    box-shadow: 2px 2px 0 #16263D;
     box-sizing: border-box;
+    outline: none;
 }
 
-button {
-    width: 100px;
-    padding: 10px;
+.pagina-cadastro-usuarios .botao-cadastrar {
+    width: 100%;
+    margin-top: 8px;
+    padding: 12px 16px;
     background-color: #16263D;
-    color: white;
-    border: none;
-    border-radius: 4px;
+    color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 6px;
+    font-family: "Black Ops One", system-ui;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     cursor: pointer;
-    margin-bottom: 20px;
+    box-shadow: 3px 3px 0 #000000;
+    transition: background-color 0.15s ease;
+}
+
+.pagina-cadastro-usuarios .botao-cadastrar:hover {
+    background-color: #1f3758;
 }

@@ -63,9 +63,9 @@ export default function index() {
 
 
   return (
-    <main className='container'>
-      <h1>Cadastro de carros</h1>
-      <form onSubmit={handleSubmit}>
+    <main className='container pagina-cadastro'>
+      <h1 className='titulo-cadastro'>Cadastro de Carros</h1>
+      <form className='formulario' onSubmit={handleSubmit}>
 
         <article className='form-control'>
           <label htmlFor="imagem">Imagem</label>
@@ -87,20 +87,23 @@ export default function index() {
           <input type="text" name='modelo' placeholder="Touring 1.5 Turbo" value={formData.modelo} onChange={handleChange}/>
         </article>
 
+        <div className='linha-campos'>
+          <article className='form-control'>
+            <label htmlFor="ano">Ano</label>
+            <input type="number" name='ano' placeholder="2023" value={formData.ano} onChange={handleChange}/>
+          </article>
+          <article className='form-control'>
+            <label htmlFor="quilometragem">Quilometragem</label>
+            <input type="number" name='quilometragem' placeholder="15.000" value={formData.quilometragem} onChange={handleChange}/>
+          </article>
+        </div>
+
         <article className='form-control'>
-          <label htmlFor="ano">Ano</label>
-          <input type="number" name='ano' placeholder="2023" value={formData.ano} onChange={handleChange}/>
-        </article>
-        <article className='form-control'>
-          <label htmlFor="quilometragem">Quilometragem</label>
-          <input type="number" name='quilometragem' placeholder="15.000" value={formData.quilometragem} onChange={handleChange}/>
-        </article>
-        <article className='form-control'>
-          <label htmlFor="Valor">Valor</label>
+          <label htmlFor="Valor">Valor (R$)</label>
           <input type="number" name='Valor' placeholder="145.000" value={formData.Valor} onChange={handleChange}/>
         </article>
 
-        <button type='submit'>Cadastrar</button>
+        <button className='botao-cadastrar' type='submit'>Cadastrar</button>
 
         <ToastContainer />
       </form>

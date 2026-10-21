@@ -53,9 +53,9 @@ export default function index() {
 
 
   return (
-    <main className='container'>
-      <h1>Cadastro de usuários</h1>
-      <form onSubmit={handleSubmit}>
+    <main className='container pagina-cadastro-usuarios'>
+      <h1 className='titulo-cadastro'>Cadastro de Usuários</h1>
+      <form className='formulario' onSubmit={handleSubmit}>
 
         <article className='form-control'>
           <label htmlFor="nome">Nome</label>
@@ -67,7 +67,7 @@ export default function index() {
           <input type="email" name='email' placeholder="lucas@email.com" value={formData.email} onChange={handleChange}/>
         </article>
 
-        <button type='submit'>Cadastrar</button>
+        <button className='botao-cadastrar' type='submit'>Cadastrar</button>
 
         <ToastContainer />
       </form>
