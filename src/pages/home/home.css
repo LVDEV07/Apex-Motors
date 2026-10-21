@@ -5,15 +5,29 @@
     font-weight: 400;
 }
 
+.pagina-home {
+    padding-bottom: 60px;
+}
+
+.titulo-pagina {
+    font-family: "Black Ops One", system-ui;
+    font-size: 38px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #16263D;
+    letter-spacing: 1px;
+    margin: 36px 0 16px;
+}
+
 .usuarios {
-    width: 90%;
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 20px;
+    width: 92%;
+    max-width: 1240px;
+    margin: 20px auto;
+    padding: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 24px;
+    gap: 28px;
     box-sizing: border-box;
 }
 
@@ -22,98 +36,192 @@
     margin: 0;
     background-color: #ffffff;
     border-radius: 12px;
-    border: 1px solid #dce1e7;
-    color: #333;
+    border: 3px solid #16263D;
+    color: #16263D;
     overflow: hidden;
-    flex: 1 1 300px;
-    max-width: 340px;
+    flex: 1 1 260px;
+    max-width: 290px;
     box-sizing: border-box;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    box-shadow: 6px 6px 0 #16263D;
+    display: flex;
+    flex-direction: column;
+}
+
+.imagem {
+    position: relative;
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    border-bottom: 3px solid #16263D;
+    background-color: #0d1726;
 }
 
 .imagemCarro {
     width: 100%;
-    height: 260px;
+    height: 100%;
     object-fit: cover;
     display: block;
 }
 
+.marca {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+    background-color: #DB1C22;
+    color: #ffffff;
+    font-family: "Black Ops One", system-ui;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 4px 10px;
+    border: 2px solid #000;
+    box-shadow: 2px 2px 0 #000;
+    transform: skewX(-10deg);
+}
+
+.ano {
+    position: absolute;
+    bottom: 8px;
+    right: 10px;
+    z-index: 2;
+    background-color: #ffcc00;
+    color: #000000;
+    font-family: "Black Ops One", system-ui;
+    font-size: 12px;
+    padding: 3px 8px;
+    border: 2px solid #000;
+    box-shadow: 2px 2px 0 #000;
+    transform: rotate(-3deg);
+}
+
 .conteudo-anuncio {
     margin: 0;
-    padding: 16px 20px;
+    padding: 14px 16px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
 .titulo {
-    font-family: "Ubuntu", sans-serif;
+    font-family: "Black Ops One", system-ui;
+    font-weight: 400;
+    font-size: 22px;
+    color: #16263D;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+    text-shadow: 2px 2px 0 #e2e8f0;
+}
+
+.modelo {
+    display: inline-block;
+    align-self: flex-start;
+    background-color: #eef1f5;
+    color: #16263D;
     font-weight: 700;
-    font-size: 24px;
-    margin-bottom: 6px;
+    font-size: 11px;
+    text-transform: uppercase;
+    padding: 4px 8px;
+    border-radius: 6px;
+    margin-bottom: 12px;
 }
 
 .sub-infos {
-    color: #585858;
-    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 14px;
 }
-.valor{
-    margin-top: 30px;
+
+.info {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background-color: #f8fafc;
+    border: 2px solid #16263D;
+    border-radius: 6px;
+    padding: 6px 4px;
     font-weight: 700;
-    font-size: 28px;
+    font-size: 12px;
+    color: #16263D;
+    box-shadow: 2px 2px 0 #16263D;
 }
 
-.icon-calendario {
-    margin-right: 10px;
-    height: 14px;
-    width: 14px;
-    vertical-align: middle;
-}
-
+.icon-calendario,
 .icon-velocimetro {
     height: 14px;
     width: 14px;
-    margin-left: 12px;
     vertical-align: middle;
-    margin-right: 10px;
+    margin: 0;
 }
 
-.content-usuarios hr {
-    border: 0;
-    border-top: 1px solid #ddd;
-    margin-top: 20px;
+.bloco-valor {
+    margin-top: auto;
+    background-color: #16263D;
+    color: #ffffff;
+    border: 2px solid #000;
+    border-radius: 8px;
+    padding: 8px 10px;
+    text-align: center;
+    box-shadow: 3px 3px 0 #DB1C22;
+    margin-bottom: 14px;
+    transform: skewX(-4deg);
+}
+
+.texto-valor {
+    display: block;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #ffcc00;
+    margin-bottom: 2px;
+}
+
+.valor {
+    font-family: "Black Ops One", system-ui;
+    font-size: 22px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 0 #000;
+}
+
+.botoes {
+    display: flex;
+    gap: 10px;
+}
+
+.alugar,
+.delete {
+    flex: 1;
+    padding: 9px 10px;
+    border: 2px solid #000;
+    border-radius: 6px;
+    font-family: "Black Ops One", system-ui;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+    box-shadow: 3px 3px 0 #000;
 }
 
 .alugar {
-    margin-top: 30px;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 6px;
     background-color: #16263D;
-    color: white;
-    font-size: 14px;
-    cursor: pointer;
-    transition: 0.2s;
-    width: 135px;
-    margin-right: 12px;
+    color: #ffffff;
 }
 
 .alugar:hover {
-    background-color: #223a5e;
-    transform: translateY(-1px);
+    background-color: #1f3758;
 }
 
 .delete {
-    margin-top: 30px;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 6px;
     background-color: #DB1C22;
-    color: white;
-    font-size: 14px;
-    cursor: pointer;
-    transition: 0.2s;
-    width: 135px;
+    color: #ffffff;
 }
 
 .delete:hover {
-    background-color: #b02a37;
-    transform: translateY(-1px);
+    background-color: #b0161b;
 }
