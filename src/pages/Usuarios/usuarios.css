@@ -5,15 +5,29 @@
     font-weight: 400;
 }
 
+.pagina-usuarios {
+    padding-bottom: 60px;
+}
+
+.titulo-usuarios {
+    font-family: "Black Ops One", system-ui;
+    font-size: 38px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #16263D;
+    letter-spacing: 1px;
+    margin: 36px 0 16px;
+}
+
 .usuarios-lista {
-    width: 90%;
+    width: 92%;
     max-width: 1200px;
-    margin: 40px auto;
-    padding: 20px;
+    margin: 20px auto;
+    padding: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 24px;
     box-sizing: border-box;
 }
 
@@ -21,55 +35,95 @@
     font-family: "Ubuntu", sans-serif;
     margin: 0;
     background-color: #ffffff;
-    border-radius: 10px;
-    border: 1px solid #dce1e7;
-    color: #333;
+    border-radius: 12px;
+    border: 3px solid #16263D;
+    color: #16263D;
     overflow: hidden;
-    flex: 1 1 220px;
-    max-width: 260px;
+    flex: 1 1 250px;
+    max-width: 280px;
     box-sizing: border-box;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    box-shadow: 6px 6px 0 #16263D;
+    display: flex;
+    flex-direction: column;
 }
 
 .usuarios-lista .conteudo-anuncio {
     margin: 0;
-    padding: 14px 16px;
+    padding: 18px 16px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.usuarios-lista .id-usuario {
+    align-self: flex-start;
+    background-color: #ffcc00;
+    color: #000000;
+    font-family: "Black Ops One", system-ui;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 3px 10px;
+    border: 2px solid #000000;
+    box-shadow: 2px 2px 0 #000000;
+    transform: skewX(-10deg);
+    margin-bottom: 12px;
 }
 
 .usuarios-lista .titulo {
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    margin-bottom: 4px;
-}
-
-.usuarios-lista .sub-infos {
-    color: #585858;
-    font-size: 14px;
+    font-family: "Black Ops One", system-ui;
+    font-weight: 400;
+    font-size: 20px;
+    color: #16263D;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+    text-shadow: 2px 2px 0 #e2e8f0;
     word-break: break-word;
 }
 
-.usuarios-lista .content-usuarios hr {
-    border: 0;
-    border-top: 1px solid #ddd;
-    margin-top: 14px;
+.usuarios-lista .infos {
+    background-color: #f8fafc;
+    border: 2px solid #16263D;
+    border-radius: 6px;
+    padding: 8px 10px;
+    box-shadow: 2px 2px 0 #16263D;
+    margin-bottom: 16px;
+}
+
+.usuarios-lista .texto-email {
+    display: block;
+    font-family: "Black Ops One", system-ui;
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: #DB1C22;
+    margin-bottom: 2px;
+}
+
+.usuarios-lista .sub-infos {
+    color: #16263D;
+    font-weight: 700;
+    font-size: 13px;
+    word-break: break-word;
 }
 
 .usuarios-lista .delete {
-    display: block;
-    margin: 20px auto 0;
-    padding: 10px 16px;
-    border: none;
+    margin-top: auto;
+    width: 100%;
+    padding: 9px 12px;
+    border: 2px solid #000000;
     border-radius: 6px;
     background-color: #DB1C22;
-    color: white;
+    color: #ffffff;
+    font-family: "Black Ops One", system-ui;
     font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     cursor: pointer;
-    transition: 0.2s;
-    width: 70%;
+    transition: background-color 0.15s ease;
+    box-shadow: 3px 3px 0 #000000;
 }
 
 .usuarios-lista .delete:hover {
-    background-color: #b02a37;
-    transform: translateY(-1px);
+    background-color: #b0161b;
 }
